@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1b2430;
+	color: #fff;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Parte del código ya está hecho con nesting, sólo te he ayudado con el background y la semántica nesting, tu reto es completar el CSS dentro del nesting ya definido para lograr imitar el maquetado que visualizarte en el video */
+
+/* Mucho éxito y happy code!!! */ /* Header */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.content_principal {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.content_header {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
+
+	.box_header {
+		flex: 1 1 45%;
+		background-color: #f0f0f0;
+		padding: 20px;
+		border-radius: 8px;
+
+		&:nth-child(1) {
+			background-color: #1a4d2e;
+			margin: 2px;
+		}
+
+		&:nth-child(2) {
+			background-color: #ff9f29;
+			margin: 2px;
+			gap: 10px;
+		}
+	}
+}
+
+.content_main {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.content_main-menu {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.box_menu {
+	flex: 1 1 30%;
+	background-color: #e0e0e0;
+	padding: 20px;
+	border-radius: 8px;
+
+	&:nth-child(1) {
+		background-color: #774360;
+		margin: 1px;
+	}
+	&:nth-child(2) {
+		background-color: #b25068;
+		margin: 1px;
+	}
+	&:nth-child(3) {
+		background-color: #e7ab79;
+		margin: 1px;
+	}
+	&:nth-child(4) {
+		background-color: #3ab0ff;
+		margin: 1px;
+	}
+	&:nth-child(5) {
+		background-color: #3b44f6;
+		margin: 1px;
+	}
+	&:nth-child(6) {
+		background-color: #a149fa;
+		margin: 1px;
+	}
+}
+
+.content_siderbar {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.content_siderbar-menu {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.siderbar_menu {
+	flex: 0 0 100%;
+	background-color: #4c3a51;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+button {
+	padding: 10px 20px;
+	border: none;
+	background-color: #1b2430;
+	color: #fff;
+	margin-bottom: 3px;
+	padding: 7px;
+	width: 100%;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.content_main {
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.content_siderbar {
+		flex-direction: column;
+		width: 30%;
+	}
+
+	.content_main-menu {
+		width: 70%;
+	}
+}
